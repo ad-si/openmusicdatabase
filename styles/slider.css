@@ -1,0 +1,82 @@
+/*------------------------------------------------------------SLIDER-----------------------------------------------------*/
+
+div#opener {
+	cursor: pointer;
+	z-index: 1;
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	width: 16px;
+	min-height: 120px;
+	background: rgba(50,50,50, 0.8);
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	padding: 10px 0 10px 6px;
+}
+
+div#opener span#arrow_open {
+	color: rgb(200,200,200);
+	font: 900 16px/8px "Arial", sans serif;
+}
+
+div#content {
+	z-index: 1;
+	position: fixed;
+	left: -420px;
+	top: 50px;
+	width: 400px;
+	font-size: 12px;
+	line-height: 12px;
+	background: rgba(50,50,50,0.8);
+	border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	-webkit-border-radius: 0 15px 15px 0;
+	padding: 10px;
+}
+
+div#content em {
+	display: inline-block;
+	font: 500 12px "Arial", sans-serif;
+	color: white;
+	margin: 0px 10px 0px 0px;
+}
+
+div#content input[type="radio"] {
+	margin: 10px 4px 10px 10px;
+}
+
+div#content input[type="text"] {
+	width: 340px;
+	height: 25px;
+	background: white;
+	border: rgb(100,100,100);
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 4px rgb(100,100,100);
+	padding: 5px;
+	margin: 10px;
+}
+
+div#content textarea {
+	width: 340px;
+	height: 100px;
+	font: 500 12px "Arial", sans-serif;
+	background: white;
+	border: rgb(100,100,100);
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 4px rgb(100,100,100);
+	padding: 5px;
+	margin: 10px;
+}
+
+div#content input[type="button"] {
+	height: 25px;
+	width: 50px;
+	color: white;
+	background: rgb(200, 25, 50);
+	border: rgb(100,100,100);
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 4px rgb(100,100,100);
+	padding: 5px;
+	margin: 10px 0 10px 300px;
+}

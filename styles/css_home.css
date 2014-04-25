@@ -1,0 +1,403 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  font: 200 16px/14px "Arial", sans-serif;
+  color: black;
+  background: white;
+}
+
+div#wrapper {
+  position: relative;
+  margin: 10px;
+}
+
+div#wrapcontent {
+	min-height: 500px;
+}
+
+h1 {
+	font: 900 30px/30px "Trebuchet MS", sans-serif;
+	color: rgb(180,230,30);
+	margin: 0 20px 0 0;
+}
+
+h2 {
+	font:500 20px/50px "Arial", sans-serif;
+}
+
+/*------------------------------------------------------NAVIGATION----------------*/
+
+
+div#nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+div#nav form {
+	display: inline-block;
+}
+
+div#nav form input[type="text"]{
+	display: inline-block;
+	position: relative;
+	bottom: 7px;
+	height: 26px;
+	width: 200px;
+	font: 500 12px/12px Arial, sans-serif;
+	background: white;
+	border: 1px solid rgb(150,150,150);
+	border-radius: 5px;
+	padding: 0 10px 0 10px;
+}
+
+div#nav form input:focus {
+  box-shadow: 0 0 10px rgb(190, 250, 80);
+}
+
+
+
+div#nav a#upload {
+  display: block;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  font: 900 20px/30px "Trebuchet MS", sans-serif;
+  background: rgb(190, 250, 80);
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+
+ /*------------------------------------------------------------HOME--------*/
+  div#home img {
+ margin: 20px 0 20px 0;
+ /*box-shadow: 0px 5px 30px grey, 0px -5px 30px grey;*/
+ width: 940px;
+ max-height: 300px;
+}
+
+div#home img#arrow_in {
+ position: absolute;
+ top: 250px;
+ left: 460px;
+ width: 50px;
+}
+
+div#home img#arrow_back, div#home img#arrow_back_second_floor, 
+div#home img#arrow_back_first_floor, div#home img#arrow_back_basement,
+div#home img#arrow_back, div#home img#arrow_back {
+ position: absolute;
+ top: 15px;
+ left: 30px;
+ width: 50px;
+}
+
+div#home img#arrow_up {
+ position: absolute;
+ top: 200px;
+ left: 490px;
+ width: 50px;
+}
+
+div#home img#arrow_down {
+ position: absolute;
+ top: 240px;
+ left: 620px;
+ width: 50px
+}
+
+div#home div#text {
+ padding: 20px;
+}
+
+
+  
+/*------------upload-------------*/
+div#upload form {
+  width: 600px;
+  height: 400px;
+  margin: 30px;
+}
+
+div#upload form label {
+  display: inline-block;
+  border: none;
+  background: rgb(180,180,180);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+}
+
+div#upload form input {
+  font: 500 16px/16px Arial, sans-serif;  
+  color: rgb(50,50,50);
+}
+
+div#upload form select	 {
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid rgb(180,180,180);
+}
+
+div#upload form input[type="text"] {
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border: 10px solid rgb(180,180,180);
+  background: white;
+  border-radius: 5px;
+}
+
+div#upload  form input[type="number"] {
+  height: 30px;
+  width: 60px;
+  margin: 5px;
+  padding: 0px;
+  border: 1px solid rgb(180,180,180);
+}
+
+div#upload label#meter_label {
+  vertical-align: center;
+}
+
+div#upload span#meter {
+  display: inline-block;
+  vertical-align: center;
+  margin: 5px;
+}
+
+div#upload span#meter input[type="number"] {
+  height: 20px;
+  width: 35px;
+  margin: 0px;
+  padding: 0px;
+  border: hidden;
+}
+
+div#upload  form input[type="time"] {
+  height: 30px;
+  width: 80px;
+  margin: 5px;
+  padding: 0px;
+  border: 1px solid rgb(180,180,180);
+}
+
+div#upload div.links {
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+  margin: 0px;
+  padding: 5px;
+  border: hidden;
+  background: rgb(200,200,200);
+}
+
+div#upload  input[type="submit"] {
+  height: 30px;
+  width: 60px;
+  margin: 15px;
+  padding: 0px;
+  border: 1px solid rgb(180,180,180);
+}
+
+
+/*---------------------------------------------------------RANGE------------------------*/
+
+div#range {
+	margin: 30px 0 0 0;
+}
+
+div#range table {
+
+}
+
+
+.piano_button {
+	display: inline-block;
+	text-align: center;
+	height: 20px;
+	width: 10px;
+	font: 700 8px/8px "Arial", sans-serif;
+	border-width: 1px 0px 1px 1px;
+    border-style:	solid;
+	border-color: grey;
+	color: ;
+}
+
+.piano_button:nth-last-child(1){
+	border-width: 1px 1px 1px 1px;
+}
+
+
+.playable {
+	background: rgb(180,230,30)
+}
+
+.range {
+	display: inline-block;
+}
+
+.white {
+	background: white;
+}
+
+.whiteplayable {
+	background: rgb(180,230,30)
+}
+
+.black {
+	background: black;
+}
+
+.blackplayable {
+	background: rgb(100,150,30)
+}
+
+.frequenz .piano_button {
+	float: left;
+	height: 60px;
+}
+
+/*---------------INSTURMENTS------------------------*/
+
+div.charts{
+	vertical-align: top;
+	display: inline-block;
+}
+
+img {
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+
+div.slide {
+	position: relative;
+	display: inline-block;
+	margin: 0 6px 0 0;
+	vertical-align: top;
+	text-align: center;
+}		
+
+div.slide div.key {	
+	font: 700 15px/15px "Arial", sans-serif;
+	height: 20px;
+	width: 20px;
+}
+
+div.slide div.valve {
+	height: 16px;
+	width: 16px;
+	margin: 2px;
+	border-radius: 8px;
+	background: rgb(100,100,100);
+	color: white;
+}	
+
+div.slide div.alt {
+	z-index: -1;
+	position: absolute;
+	top: 20px;
+	background: rgb(230,230,230);
+	color: white;
+}	
+
+div.slide div.f_attachment {
+	position: absolute;
+	top: 20px;
+	background: rgb(180,220,30);
+	color: white;
+}	
+
+div.slide span.num {
+	position: absolute;
+	bottom: 5px;
+	left: 5px; 
+}
+	
+/*---------------TRUMPET------------------------*/
+	
+div.valves {	
+	position: relative;
+	display: inline-block;
+	margin: 0 6px 0 0;
+}		
+
+div.valves div.key {	
+	font: 700 15px/15px "Arial", sans-serif;
+	height: 20px;
+	width: 20px;
+}
+
+div.valves .valve {
+	height: 14px;
+	width: 14px;
+	border: 1px solid grey;
+	margin: 2px;
+	border-radius: 7px;
+}	
+
+.pressed1 {
+	background: rgb(50,50,50);
+}
+
+.pressed0 {
+	background: white;
+}	
+
+
+
+
+/*----------Impressum---------------*/
+div#impressum {
+  padding: 40px;
+}
+
+div#contact{
+  line-height: 22px;
+}
+
+div#contact a {
+  text-decoration: none;
+}
+
+div#contact div.fn {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+div#contact img.photo {
+  margin: 0 200px 0 0;
+}
+
+
+/*------------footer----------------*/
+div#footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 0 20px 0;
+}
+
+div#footer li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+div#footer a {
+  color: rgb(0,100,255);
+  margin: 0 10px 0 0;
+}
+
+span#copyright {
+  color: rgb(50,50,50);
+  margin: 0 15px 0 0;
+}
