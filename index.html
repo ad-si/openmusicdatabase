@@ -1,53 +1,40 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <title>OpenMusicDataBase</title>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-
-    <link rel="stylesheet" href="css/screen.css"/>
-
+  <meta charset="UTF-8">
+  <title>Open Music Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An open database of music notation, instrument fingerings and ranges.">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+<article id="app">
+  <nav>
+    <h1><a href="#home">Open Music Database</a></h1>
+    <form id="search-form" autocomplete="off">
+      <fieldset>
+        <input type="text" name="search" placeholder="Search">
+      </fieldset>
+    </form>
+    <a href="#instruments">Instruments</a>
+    <a href="#range">Range</a>
+    <a href="#about">About</a>
+    <a id="upload" href="#upload">Upload</a>
+  </nav>
 
-<article>
+  <main id="view"></main>
 
-    <nav>
-        <h1>Openmusicdatabase</h1>
-
-        <form>
-            <fieldset>
-                <input type="text" name="search"/>
-            </fieldset>
-        </form>
-        <a id="upload" href="upload.php">Upload</a>
-        <a href="instruments.php">Instruments</a>
-        <a href="range.php">Range</a>
-    </nav>
-
-    <div id="wrapcontent">
-        <div id="instruments">
-
-            <h2>Trumpet</h2>
-            <img src="img/trumpet.svg" style="height:150px;" alt="trumpet"/>
-
-            <h2>Tenortrombone</h2>
-            <img src="img/tenortrombone.svg" style="height:200px;" alt="trombone"/>
-
-
-            <h2>Tenorbasstrombone</h2>
-            <img src="img/tenortrombone.svg" style="height:200px;" alt="tenorbasstrombone"/>
-
-        </div>
-    </div>
-
-    <footer></footer>
-
+  <footer>
+    <ul>
+      <li><span id="copyright">Open Music Database 2010&ndash;</span></li>
+      <li><a href="#imprint">Imprint</a></li>
+      <li><a href="#terms">Terms of Use</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+    </ul>
+  </footer>
 </article>
 
-<script src="js/index.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

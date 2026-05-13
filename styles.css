@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 200 16px/1.4 "Arial", sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+article#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+nav {
+  position: relative;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  display: inline-block;
+  font: 900 30px/30px "Trebuchet MS", sans-serif;
+  margin: 0 30px 0 0;
+  vertical-align: middle;
+}
+
+nav h1 a {
+  color: #b4e61e;
+  text-decoration: none;
+}
+
+nav form {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+nav form input[type="text"] {
+  height: 30px;
+  width: 220px;
+  font: 500 13px/13px Arial, sans-serif;
+  background: #fff;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+nav form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #befa50;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  margin-right: 16px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #64961e;
+}
+
+nav a#upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 120px;
+  line-height: 30px;
+  text-align: center;
+  font: 900 18px/30px "Trebuchet MS", sans-serif;
+  background: #befa50;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  color: #000;
+  margin: 0;
+}
+
+main#view {
+  min-height: 500px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+  list-style: none;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #0064ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer span#copyright {
+  color: #323232;
+}
+
+/* ---- Headings ---- */
+h2 {
+  font: 500 22px/1.4 "Arial", sans-serif;
+  margin: 30px 0 10px 0;
+}
+
+h3 {
+  font: 500 18px/1.4 "Arial", sans-serif;
+  margin: 16px 0 8px 0;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* ---- Home ---- */
+.home-intro {
+  max-width: 720px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.home-intro p {
+  margin-bottom: 14px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.home-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.home-card:hover {
+  box-shadow: 0 0 16px rgba(180, 230, 30, 0.6);
+  border-color: #b4e61e;
+}
+
+.home-card h3 {
+  margin: 0 0 6px 0;
+  color: #64961e;
+}
+
+/* ---- Instruments ---- */
+.instrument-section img.instrument-image {
+  display: block;
+  margin: 10px 0 16px 0;
+}
+
+.fingering-chart {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 6px 0;
+}
+
+div.charts {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.valves {
+  position: relative;
+  display: inline-block;
+  margin: 0 6px 0 0;
+  vertical-align: top;
+  text-align: center;
+}
+
+div.valves div.key {
+  font: 700 12px/16px "Arial", sans-serif;
+  height: 22px;
+  width: 22px;
+  margin-bottom: 4px;
+}
+
+div.valves .valve {
+  height: 14px;
+  width: 14px;
+  border: 1px solid #808080;
+  margin: 2px auto;
+  border-radius: 7px;
+  background: #fff;
+}
+
+div.valves .valve.pressed1 {
+  background: #323232;
+}
+
+div.valves .valve.pressed0 {
+  background: #fff;
+}
+
+div.slide {
+  position: relative;
+  display: inline-block;
+  margin: 0 6px 0 0;
+  vertical-align: top;
+  text-align: center;
+  width: 22px;
+}
+
+div.slide div.key {
+  font: 700 12px/16px "Arial", sans-serif;
+  height: 22px;
+  width: 22px;
+  margin-bottom: 2px;
+}
+
+div.slide div.valve {
+  height: 16px;
+  width: 16px;
+  margin: 2px auto;
+  border-radius: 8px;
+  background: #646464;
+  color: #fff;
+  position: relative;
+  font: 700 10px/16px "Arial", sans-serif;
+}
+
+div.slide div.alt {
+  z-index: -1;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c8c8c8;
+  color: #fff;
+}
+
+div.slide div.f_attachment {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #b4dc1e;
+  color: #fff;
+}
+
+div.slide span.num {
+  display: block;
+  line-height: 16px;
+}
+
+.sax-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sax-cell {
+  width: 60px;
+  text-align: center;
+}
+
+.sax-cell .key {
+  font: 700 12px/16px "Arial", sans-serif;
+  margin-bottom: 4px;
+}
+
+.sax-cell svg {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---- Range ---- */
+table.range-table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.range-table td {
+  padding: 4px 10px 4px 0;
+  vertical-align: middle;
+}
+
+table.range-table tr:nth-child(odd) {
+  background: #fafafa;
+}
+
+table.range-table td.label {
+  font-weight: bold;
+  white-space: nowrap;
+  padding-right: 16px;
+}
+
+.range-wrap {
+  overflow-x: auto;
+}
+
+.piano-row {
+  display: inline-block;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.piano_button {
+  display: inline-block;
+  text-align: center;
+  height: 26px;
+  width: 14px;
+  font: 700 8px/8px "Arial", sans-serif;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: #808080;
+  vertical-align: top;
+  padding-top: 2px;
+}
+
+.piano_button:last-child {
+  border-width: 1px 1px 1px 1px;
+}
+
+.piano_button.white {
+  background: #fff;
+  color: #000;
+}
+
+.piano_button.black {
+  background: #000;
+  color: #fff;
+}
+
+.piano_button.whiteplayable {
+  background: #b4e61e;
+  color: #000;
+}
+
+.piano_button.blackplayable {
+  background: #64961e;
+  color: #fff;
+}
+
+.frequenz .piano_button {
+  height: 60px;
+  width: 14px;
+}
+
+/* ---- Upload ---- */
+.upload-form {
+  max-width: 700px;
+}
+
+.upload-form fieldset {
+  margin-bottom: 16px;
+}
+
+.upload-form label {
+  display: inline-block;
+  background: #ececec;
+  border-radius: 5px;
+  margin: 5px 8px 5px 0;
+  padding: 3px 8px;
+  font-size: 14px;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="number"],
+.upload-form input[type="time"],
+.upload-form select {
+  height: 32px;
+  margin: 5px 0;
+  padding: 4px 8px;
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  background: #fff;
+  font: 500 14px/14px Arial, sans-serif;
+  color: #323232;
+}
+
+.upload-form input[type="number"] {
+  width: 70px;
+}
+
+.upload-form input[type="time"] {
+  width: 100px;
+}
+
+.upload-form .meter {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.upload-form .meter input[type="number"] {
+  height: 22px;
+  width: 40px;
+  margin: 0;
+  display: block;
+}
+
+.upload-form .links-row {
+  margin: 10px 0;
+}
+
+.upload-form .links {
+  display: inline-block;
+  height: 60px;
+  width: 70px;
+  margin: 0 6px 0 0;
+  padding: 8px;
+  background: #c8c8c8;
+  border-radius: 6px;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.upload-form .links:hover {
+  background: #b4e61e;
+}
+
+.upload-form input[type="submit"] {
+  height: 36px;
+  padding: 0 20px;
+  margin-top: 16px;
+  background: #befa50;
+  border: 1px solid #b4b4b4;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.upload-form input[type="submit"]:hover {
+  box-shadow: 0 0 10px #befa50;
+}
+
+/* ---- Static legal pages ---- */
+.legal {
+  max-width: 760px;
+  line-height: 1.55;
+}
+
+.legal h2 {
+  margin-top: 24px;
+}
+
+.legal h3 {
+  margin-top: 16px;
+}
